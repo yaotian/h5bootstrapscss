@@ -1,3 +1,4 @@
+require 'bootstrap-sass'
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 
