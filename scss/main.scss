@@ -1,2 +1,9 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+@import "bootstrap";
+
 @import "variables";
-@import "bootstrap/scss/normalize"
