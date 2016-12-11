@@ -162,7 +162,8 @@
 
 .navbar-brand {
   float: left;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  // padding: $navbar-padding-vertical $navbar-padding-horizontal; //ytdel
+  padding:12px 30px 0 15px; //ytadd
   font-size: $font-size-large;
   line-height: $line-height-computed;
   height: $navbar-height;
@@ -272,6 +273,9 @@
       > a {
         padding-top:    $navbar-padding-vertical;
         padding-bottom: $navbar-padding-vertical;
+        padding-left: 24px;//ytadd
+        padding-right: 24px;//ytadd
+        text-transform: uppercase;//ytadd
       }
     }
   }
