@@ -64,7 +64,7 @@ gulp.task('js', function() {
 gulp.task('browser-sync', function() {
     var files = [
         './**/*.html',
-        'dist/main.css',
+        'css/main.css',
         'img/**/*.png',
         'js/all.min.js'
     ];
@@ -82,7 +82,7 @@ gulp.task('default', function() {
     gulp.run('css', 'js', 'browser-sync');
 
     // 监听文件变化
-    gulp.watch(['./js/main.js', './js/plugins.js', './scss/*'], function() {
+    gulp.watch(['./js/main.js', './js/plugins.js', './scss/**/*.scss'], function() {
         gulp.run('css', 'js');
     });
 });
