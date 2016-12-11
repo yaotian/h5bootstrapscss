@@ -15,7 +15,7 @@ var autoprefixer = require('autoprefixer');
 gulp.task('sass', function() {
     gulp.src('./scss/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./dist'));
 });
 
 
@@ -33,10 +33,10 @@ gulp.task('postcss', function() {
             "Safari >= 6"
         ]
     })];
-    return gulp.src('./css/*.css')
+    return gulp.src('./dist/*.css')
         .pipe(postcss(processors))
         .pipe(cleanCSS())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./css'));
 });
 
 
