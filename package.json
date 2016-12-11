@@ -10,8 +10,15 @@
   "devDependencies": {
     "autoprefixer": "^6.5.3",
     "cssnext": "^1.8.4",
-    "gulp-postcss": "^6.2.0"
-  },  
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-concat":"",
+    "gulp-uglify":"",
+    "gulp-rename":"",
+    "gulp-sass":"",
+    "gulp-clean-css":"",
+    "browser-sync":""
+  },
   "directories": {
     "doc": "doc"
   },
