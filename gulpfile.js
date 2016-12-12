@@ -12,15 +12,7 @@ var autoprefixer = require('autoprefixer');
 
 
 // 编译Sass
-gulp.task('sass', function() {
-    gulp.src('./scss/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('./dist'));
-});
-
-
-//postcss
-gulp.task('postcss', function() {
+gulp.task('css', function() {
     var processors = [autoprefixer({
         browsers: [
             "Android 2.3",
@@ -33,18 +25,14 @@ gulp.task('postcss', function() {
             "Safari >= 6"
         ]
     })];
-    return gulp.src('./dist/*.css')
+
+    gulp.src('./scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./dist'))
         .pipe(postcss(processors))
         .pipe(cleanCSS())
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./css'));;
 });
-
-
-//css
-gulp.task('css', function() {
-    gulp.run('sass', 'postcss');
-});
-
 
 
 gulp.task('js', function() {
@@ -52,7 +40,9 @@ gulp.task('js', function() {
             './js/vendor/jquery-3.1.1.min.js',
             './js/vendor/holder-2.9.min.js',
             './js/vendor/masonry.4.1.1.min.js',
-            './venders/bootstrap-sass-3.3.7/assets/javascripts/bootstrap.min.js'
+            './venders/bootstrap-sass-3.3.7/assets/javascripts/bootstrap.min.js',
+            './js/plugin.js',
+            './js/main.js'
         ])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('./js'))
@@ -85,6 +75,5 @@ gulp.task('default', function() {
     gulp.watch(['./js/main.js', './js/plugins.js', './scss/**/*.scss'], function() {
         gulp.run('css', 'js');
     });
+
 });
-
-
