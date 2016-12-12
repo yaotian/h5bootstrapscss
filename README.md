@@ -25,13 +25,17 @@
 * bootstrap中的js
 * fonts(fontawesome4.7.0,glyphicons)  http://fontawesome.io/
 
-== 使用方法
+## 使用方法
 1. 根目录 npm install
+
     这个步骤会自动安装所有的组件
 
 2. 根目录 gulp
+
     这个会自动编译所有的前端代码,并自动打开浏览器，实时检测你的修改，并在浏览器中实时显示修改后的效果
 
+## 单页网站的例子
+![](https://github.com/yaotian/h5bootstrapscss/raw/master/img/demo.png)
 ## License
 
 The code is available under the [MIT license](LICENSE.txt).
