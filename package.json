@@ -1,0 +1,38 @@
+{
+  "name": "sassandcompass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "postcss": "5.2.6",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-concat":"",
+    "gulp-uglify":"",
+    "gulp-rename":"",
+    "gulp-sass":"",
+    "gulp-clean-css":"",
+    "browser-sync":""
+  },
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaotian/sassandcompass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaotian/sassandcompass/issues"
+  },
+  "homepage": "https://github.com/yaotian/sassandcompass#readme"
+}
